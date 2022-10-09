@@ -1,0 +1,11 @@
+.settings-panel {
+  min-width: 300px;
+}
+
+.settings-panel label {
+  margin-bottom: 8px;
+}
+
+.settings-panel .p-panel-content > .grid > * {
+  margin-bottom: 32px;
+}

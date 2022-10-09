@@ -1,0 +1,10 @@
+.App {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 32px;
+}
+
+.App > * {
+  margin-right: 32px;
+  margin-bottom: 32px;
+}
