@@ -2,9 +2,16 @@
   display: flex;
   flex-wrap: wrap;
   padding: 32px;
+  min-width: 320px;
+  max-width: 960px;
 }
 
 .App > * {
   margin-right: 32px;
   margin-bottom: 32px;
+}
+
+.p-panel .p-panel-content {
+  min-height: 320px;
+  display: flex;
 }

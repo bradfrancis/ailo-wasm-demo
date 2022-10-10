@@ -23,6 +23,6 @@ yarn-debug.log*
 yarn-error.log*
 
 # WebAssembly
-src/wasm
+src/wasm/*.wasm
 
 .vscode

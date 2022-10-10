@@ -5,7 +5,7 @@
   "scripts": {
     "start": "craco start",
     "build": "craco build",
-    "compile-cpp": "em++ --bind src/lib/sieve.cpp -O1 -s WASM=1 -s ALLOW_MEMORY_GROWTH=1 -s 'ENVIRONMENT=\"web,worker\"' -s USE_ES6_IMPORT_META=0 -s EXPORT_ES6=1 -s MODULARIZE=1 -o src/wasm/sieve.js && cp src/wasm/sieve.wasm public/",
+    "compile-cpp": "em++ --bind src/lib/sieve.cpp -O1 -s WASM=1 -s ALLOW_MEMORY_GROWTH=1 -s ENVIRONMENT=\"web,worker\" -s USE_ES6_IMPORT_META=0 -s EXPORT_ES6=1 -s MODULARIZE=1 -o src/wasm/sieve.js && mv src/wasm/sieve.wasm public/",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

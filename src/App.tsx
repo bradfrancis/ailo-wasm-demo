@@ -1,3 +1,4 @@
+import React from "react";
 import { SettingsPanel } from "./components/SettingsPanel";
 import { ResultsGraph } from "./components/ResultsGraph";
 import { useGlobalStore } from "./GlobalStore";
@@ -32,7 +33,10 @@ function App() {
           loading={state?.benchmarkStarted ?? false}
         />
       )}
-      <ResultsGraph dataGroups={dataGroups} />
+      <ResultsGraph
+        dataGroups={dataGroups}
+        barColours={{ avg: "#6366f1", max: "#ef4444", min: "#f59e0b" }}
+      />
     </div>
   );
 }

@@ -41,6 +41,5 @@ export interface ResultsGraphProps {
 export interface ResultsGraphDataSet {
   label: string;
   data: number[];
-  fill?: boolean;
-  borderColor?: string;
+  backgroundColor?: string;
 }
